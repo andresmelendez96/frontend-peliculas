@@ -1,0 +1,525 @@
+
+/* ESTRUCTURA PRINCIPAL */
+
+.app-shell {
+  display: flex;
+  min-height: 100vh;
+  background: #f4f6fa;
+}
+
+.sidebar {
+  width: 255px;
+  flex-shrink: 0;
+  background: #172033;
+  color: #ffffff;
+  padding: 28px 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-main {
+  flex: 1;
+  min-width: 0;
+}
+
+/* MARCA */
+
+.sidebar-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 48px;
+}
+
+.brand-icon {
+  width: 43px;
+  height: 43px;
+  background: #e94b61;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar-brand h2 {
+  font-size: 19px;
+  margin: 0;
+  font-weight: 700;
+}
+
+.sidebar-brand span {
+  display: block;
+  color: #a8b2c5;
+  font-size: 12px;
+  margin-top: 3px;
+}
+
+.sidebar-label {
+  color: #8793a9;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.3px;
+  margin: 0 0 14px 10px;
+}
+
+/* NAVEGACIÓN */
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 13px 12px;
+  border-radius: 9px;
+  text-decoration: none;
+  color: #bdc6d6;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.nav-item:hover {
+  background: #253149;
+  color: #ffffff;
+}
+
+.nav-item.active {
+  background: #e94b61;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.sidebar-footer {
+  margin-top: auto;
+  padding: 18px 10px 0;
+  border-top: 1px solid #303b50;
+  color: #a8b2c5;
+  font-size: 12px;
+}
+
+.sidebar-footer small {
+  display: block;
+  margin-top: 5px;
+}
+
+/* ENCABEZADO */
+
+.topbar {
+  min-height: 85px;
+  background: #ffffff;
+  padding: 16px 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e9edf3;
+}
+
+.topbar-label {
+  color: #909bad;
+  font-size: 10px;
+  letter-spacing: 1.2px;
+  font-weight: 700;
+}
+
+.topbar h2 {
+  font-size: 19px;
+  margin: 4px 0 0;
+  color: #202b3e;
+}
+
+.topbar-user {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  color: #657187;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #263248;
+}
+
+.user-info span {
+  display: block;
+  font-size: 11px;
+  color: #8b95a5;
+  margin-top: 3px;
+}
+
+/* CONTENIDO */
+
+.content-area {
+  padding: 32px;
+  max-width: 1500px;
+  margin: auto;
+}
+
+/* PANEL DE BIENVENIDA */
+
+.welcome-panel {
+  background: linear-gradient(120deg, #252f48, #394866);
+  border-radius: 16px;
+  padding: 38px 40px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 215px;
+}
+
+.welcome-tag {
+  color: #e94b61;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.welcome-panel h1 {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 12px 0;
+}
+
+.welcome-panel p {
+  color: #d1d8e5;
+  max-width: 570px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* TARJETAS DE MÓDULOS */
+
+.modules-section {
+  margin-top: 38px;
+}
+
+.section-heading h2 {
+  font-size: 21px;
+  font-weight: 700;
+  color: #273348;
+  margin-bottom: 6px;
+}
+
+.section-heading p {
+  color: #8590a2;
+  font-size: 14px;
+}
+
+.module-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 22px;
+}
+
+.module-card {
+  position: relative;
+  background: #ffffff;
+  border: 1px solid #e9edf3;
+  border-radius: 13px;
+  padding: 23px;
+  min-height: 165px;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.module-card:hover {
+  transform: translateY(-3px);
+  border-color: #e94b61;
+  box-shadow: 0 8px 24px rgba(30, 45, 75, 0.08);
+}
+
+.module-icon {
+  width: 43px;
+  height: 43px;
+  border-radius: 11px;
+  background: #fff0f2;
+  color: #e94b61;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.module-card-content h3 {
+  color: #293449;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 16px 0 6px;
+}
+
+.module-card-content p {
+  color: #8590a2;
+  font-size: 12px;
+  margin: 0;
+}
+
+.module-arrow {
+  position: absolute;
+  right: 20px;
+  top: 24px;
+  color: #a1a9b7;
+}
+
+/* PANTALLAS EN CONSTRUCCIÓN */
+
+.placeholder-page {
+  background: #ffffff;
+  border: 1px solid #e9edf3;
+  border-radius: 14px;
+  padding: 35px;
+}
+
+.placeholder-page h1 {
+  margin: 15px 0;
+  color: #273348;
+}
+
+.placeholder-page p {
+  color: #8590a2;
+}
+
+.placeholder-status {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 8px 13px;
+  border-radius: 7px;
+  background: #fff0f2;
+  color: #d83d55;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* DISEÑO RESPONSIVO */
+
+@media (max-width: 1000px) {
+  .module-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .sidebar {
+    width: 220px;
+  }
+}
+
+@media (max-width: 650px) {
+  .app-shell {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    padding: 18px;
+  }
+
+  .sidebar-brand {
+    margin-bottom: 20px;
+  }
+
+  .sidebar-nav {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .sidebar-footer {
+    margin-top: 20px;
+  }
+
+  .topbar {
+    padding: 16px;
+  }
+
+  .content-area {
+    padding: 18px;
+  }
+
+  .module-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .welcome-panel {
+    padding: 25px;
+  }
+
+  .welcome-panel h1 {
+    font-size: 24px;
+  }
+
+  .welcome-panel > svg {
+    display: none;
+  }
+}
+
+/* MÓDULO DE GÉNEROS */
+
+.generos-page {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.generos-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.generos-heading h1 {
+  color: #273348;
+  font-size: 28px;
+  font-weight: 700;
+  margin: 10px 0 5px;
+}
+
+.generos-heading p {
+  color: #8590a2;
+  margin: 0;
+  font-size: 14px;
+}
+
+.generos-summary {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: #ffffff;
+  border: 1px solid #e9edf3;
+  border-radius: 13px;
+  padding: 22px;
+  width: fit-content;
+  min-width: 270px;
+}
+
+.generos-summary-icon {
+  background: #fff0f2;
+  color: #e94b61;
+  border-radius: 11px;
+  padding: 13px;
+}
+
+.generos-summary span {
+  color: #8590a2;
+  font-size: 12px;
+}
+
+.generos-summary h2 {
+  color: #273348;
+  font-weight: 700;
+  font-size: 25px;
+  margin: 4px 0 0;
+}
+
+.generos-table-container {
+  background: #ffffff;
+  border: 1px solid #e9edf3;
+  border-radius: 13px;
+  overflow: hidden;
+}
+
+.generos-table-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px;
+  border-bottom: 1px solid #e9edf3;
+}
+
+.generos-table-heading h3 {
+  color: #273348;
+  font-size: 17px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.generos-table-heading span {
+  color: #8590a2;
+  font-size: 12px;
+}
+
+.generos-table-container th {
+  background: #f8f9fc;
+  color: #66738a;
+  font-size: 12px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.generos-table-container td {
+  color: #435069;
+  font-size: 13px;
+}
+
+.generos-message {
+  text-align: center;
+  padding: 35px;
+  color: #8590a2;
+}
+
+@media (max-width: 650px) {
+  .generos-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+/* FORMULARIO DE GÉNEROS */
+
+.generos-form-container {
+  background: #ffffff;
+  border: 1px solid #e9edf3;
+  border-radius: 13px;
+  padding: 25px;
+}
+
+.generos-form-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #e94b61;
+  margin-bottom: 25px;
+}
+
+.generos-form-heading h3 {
+  color: #273348;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.generos-form-heading p {
+  color: #8590a2;
+  font-size: 13px;
+  margin: 0;
+}
+
+.generos-form-container .form-label {
+  color: #435069;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.generos-form-container .form-control,
+.generos-form-container .form-select {
+  border-color: #dfe4ec;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 13px;
+}
+
+.generos-form-container .form-control:focus,
+.generos-form-container .form-select:focus {
+  border-color: #e94b61;
+  box-shadow: 0 0 0 0.2rem rgba(233, 75, 97, 0.12);
+}
+
+.generos-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 25px;
+}

@@ -1,0 +1,30 @@
+
+/* Configuración general de la aplicación */
+
+:root {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #212529;
+  background-color: #f5f6fa;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #f5f6fa;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
