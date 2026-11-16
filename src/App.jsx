@@ -9,9 +9,11 @@ import Generos from './pages/Generos'
 import Sidebar from './components/layout/Sidebar'
 import Navbar from './components/layout/Navbar'
 import Dashboard from './pages/Dashboard'
-
+import Directores from './pages/Directores'
+import Productoras from './pages/Productoras'
+import Tipos from './pages/Tipos'
 import './App.css'
-
+import Media from './pages/Media'
 function ModulePlaceholder({ title }) {
   return (
     <section className="placeholder-page">
@@ -49,24 +51,24 @@ function App() {
                 />
 
               <Route
-                path="/directores"
-                element={<ModulePlaceholder title="Directores" />}
-              />
+  path="/directores"
+  element={<Directores />}
+/>
 
               <Route
-                path="/productoras"
-                element={<ModulePlaceholder title="Productoras" />}
-              />
+  path="/productoras"
+  element={<Productoras />}
+/>
 
               <Route
-                path="/tipos"
-                element={<ModulePlaceholder title="Tipos" />}
-              />
+  path="/tipos"
+  element={<Tipos />}
+/>
 
               <Route
-                path="/media"
-                element={<ModulePlaceholder title="Películas y series" />}
-              />
+  path="/media"
+  element={<Media />}
+/>
 
               <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>
